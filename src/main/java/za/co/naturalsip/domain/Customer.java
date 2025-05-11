@@ -6,9 +6,9 @@ package za.co.naturalsip.domain;
   Date:10 May 2025
  */
 public class Customer {
-    private Long id;
-    private String name;
-    private String email;
+    private final Long id;
+    private final String name;
+    private final String email;
 
     private Customer(Builder builder) {
         this.id = builder.id;
