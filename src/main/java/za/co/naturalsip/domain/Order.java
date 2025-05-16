@@ -6,13 +6,13 @@ package za.co.naturalsip.domain;
   Date:11 May 2025
  */
 
-import java.io.ObjectInputFilter;
+
 import java.util.Date;
 
 public class Order {
     private long orderID;
     private Date date;
-    private Status status;
+    private String status;
 
     public Order() {
     }
@@ -31,7 +31,7 @@ public class Order {
         return date;
     }
 
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
 
@@ -47,7 +47,7 @@ public class Order {
     public static class Builder{
         private long orderID;
         private Date date;
-        private Status status;
+        private String status;
 
         public Builder setOrderID(long id){
             this.orderID = orderID;
@@ -57,7 +57,7 @@ public class Order {
             this.date = date;
             return this;
         }
-        public Builder setStatus(Status status){
+        public Builder setStatus(String status){
             this.orderID = orderID;
             return this;
         }
