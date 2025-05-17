@@ -1,5 +1,8 @@
 package za.co.naturalsip.domain;
-
+/*OrderItem.java
+  Author: Sibusiso Makaula (217101887)
+  Date:11 May 2025
+ */
 public class OrderItem {
     private int quantity;
     private double price;
@@ -14,11 +17,13 @@ public class OrderItem {
         this.price = builder.price;
     }
 
-    public int getQuantity() {
+    public int getQuantity()
+    {
         return quantity;
     }
 
-    public double getPrice() {
+    public double getPrice()
+    {
         return price;
     }
 
