@@ -67,7 +67,7 @@ public class Address {
             this.cityName = cityName;
             return this;
         }
-        public Builder setstateName(String stateName) {
+        public Builder setStateName(String stateName) {
             this.stateName = stateName;
             return this;
         }
