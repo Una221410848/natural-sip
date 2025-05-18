@@ -1,65 +1,31 @@
 package za.co.naturalsip.domain;
+/*Product.java
+  Product POJO Class
+  Author: Asemahle Magwa( 222089059)
+  Date:18 May 2025
+ */
 
 public class Category {
-    private  int productID;
-    private  String categoryName;
+    private final Long id;
+    private final String name;
 
-
-    public Category() {
+    private Category(Builder builder) {
+        this.id = builder.id;
+        this.name = builder.name;
     }
 
-    public Category(Category.Builder builder) {
-        this.productID = builder.productID;
-        this.categoryName = builder.categoryName;
+    public static class Builder {
+        private Long id;
+        private String name;
 
-    }
+        public Builder id(Long id) { this.id = id; return this; }
+        public Builder name(String name) { this.name = name; return this; }
 
-    public int getProductid() {
-
-        return productID;
-    }
-
-    public String getCategoryName() {
-
-        return categoryName;
-    }
-
-    @Override
-    public String toString() {
-        return "Category{" +
-                "productID=" + productID +
-                ", categoryName='" + categoryName + '\'' +
-                '}';
-    }
-
-    public static class Builder{
-        private int productID;
-        private String categoryName;
-
-        public Category.Builder setProductID(int id){
-            this.productID = productID;
-            return this;
-        }
-        public Category.Builder setProductName(String name){
-            this.categoryName = categoryName;
-            return this;
-        }
-
-
-        public Category.Builder copy(Category category){
-            this.productID = category.productID;
-            this.categoryName = category.categoryName;
-            return this;
-
-        }
-        public Category build(){
+        public Category build() {
             return new Category(this);
         }
-
     }
 
-
-
-
+    public Long getId() { return id; }
+    public String getName() { return name; }
 }
-

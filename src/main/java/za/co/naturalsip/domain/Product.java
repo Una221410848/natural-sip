@@ -23,12 +23,12 @@ public class Product {
         this.description =builder.description;
     }
 
-    public int getProductid() {
+    public int getProductID() {
 
         return productID;
     }
 
-    public String getProductname() {
+    public String getProductName() {
 
         return productName;
     }
@@ -60,11 +60,11 @@ public class Product {
         private String description;
 
         public Builder setProductID(int id){
-            this.productID = productID;
+            this.productID = id;
             return this;
         }
         public Builder setProductName(String name){
-            this.productName = productName;
+            this.productName = name;
             return this;
         }
         public Builder setPrice(double price){
