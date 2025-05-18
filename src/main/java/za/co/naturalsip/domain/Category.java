@@ -2,7 +2,7 @@ package za.co.naturalsip.domain;
 /*Product.java
   Product POJO Class
   Author: Asemahle Magwa( 222089059)
-  Date:10 May 2025
+  Date:18 May 2025
  */
 
 public class Category {
